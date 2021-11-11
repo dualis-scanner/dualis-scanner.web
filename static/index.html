@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script type="module">
+            import {isRegistered, register, getUserID, getUserHash} from "./storage.js";
+
+            if (!isRegistered()) {
+                register();
+            }
+            else {
+                alert(`${getUserID()} : ${getUserHash()}`);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Hello to the dualis webscanner!!!</h1>
+
+
+    </body>
+</html>
